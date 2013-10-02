@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'SegoePrintRegular';
+    src: url('segoe_print.eot');
+    src: url('segoe_print.eot') format('embedded-opentype'),
+         url('segoe_print.woff') format('woff'),
+         url('segoe_print.ttf') format('truetype'),
+         url('segoe_print.svg#SegoePrintRegular') format('svg');
+}

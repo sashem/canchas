@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Santiagomatch</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="js/jquery-1.8.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/ui-bootstrap-tpls-0.5.0.min.js"></script>
+		<script src="js/jstorage.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/bootbox.min.js"></script>
+		<script src="js/principal_controller.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/principal.css" />
+		<link rel="stylesheet" href="fonts/segoe_print.css" />
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu|Quando' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="container" ng-app="principal">
+			<div class="row">
+				<div class="col-lg-12 top_menu" ng-controller="menuCtrl">
+					<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<ul class="nav navbar-nav">
+						    <li><a href="#inicio" ng-class="active('inicio')" ng-click="set_active('inicio')">Inicio</a></li>	
+						    <li><a href="#canchas" ng-class="active('canchas')" ng-click="set_active('canchas')">Lista de Canchas</a></li>
+						    <!-- <li><a href="#canchas" ng-class="active('encuentro')" ng-click="set_active('encuentro')">Iniciar encuentro</a></li>-->			    						    					    
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 msge">
+					<div ng-controller="mensajesCtrl">
+					  <alert ng-repeat="alert in mensajes" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+					</div>
+				</div>
+			</div>
+			<div class="row main-background">
+				<div class="col-lg-10 col-lg-offset-1" ng-view>
+					
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

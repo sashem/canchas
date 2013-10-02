@@ -1,0 +1,79 @@
+body{
+	padding-top:50px;
+}
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{
+	padding-left:0;
+	padding-right:0;
+	min-height:0;
+}
+.row{
+	margin:0;
+}
+.top_menu{
+	display:none;
+}
+.oferton{
+	height:350px;
+	overflow:hidden;
+}
+.se_busca{
+	height:100%;
+	border:thin solid #CCC;
+}
+.novedades, .campeonatos{
+	border:thin solid #CCC;
+	height:365px;
+}
+.jumbotron h1{
+	font-family: 'Ubuntu', sans-serif;
+	color: #B32D73;
+	font-size:80px !important;
+}
+.active{
+	background-color:#D6D6D6;
+}
+.canchas{
+	width: 100%;
+	overflow-x:scroll;
+}
+.main-background{
+	min-height:500px;
+	background-image:url('../imgs/Santiago_match_logo_1.2.png');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+.disenio1{
+	height:500px;
+	border-radius: 10px 0px 10px 0px; 
+	-moz-border-radius: 10px 0px 10px 0px; 
+	-webkit-border-radius: 10px 0px 10px 0px; 
+	/*border: 3px solid #339999;
+	background-color: rgba(250, 250, 250, 0.9);*/
+	overflow:hidden;
+}
+.disenio1 .col-lg-6{
+	padding:15px;
+	height:100%;
+}
+.disenio1 h3,h4{
+	text-align:center;
+	color:#8192B1;
+}
+.disenio1 .btn-success{
+	
+}
+
+.disenio1 label{
+	color:#339999;
+}
+.header{
+	font-family:"SegoePrintRegular",Arial,sans-serif;
+	background-color: rgba(52, 148, 179, 1);
+	min-height:35px;
+	color:#FFF;
+	font-weight: 500;
+	font-size: 24px;
+	line-height:24pt;
+	letter-spacing:5px;
+}
